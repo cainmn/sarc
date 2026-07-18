@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SARC — peças autênticas, projetos únicos e serviços personalizados para carros e motos." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>SARC | Peças & Projetos Únicos</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="SARC - início">
+      <img class="brand-logo" src="assets/images/logo-sarc-transparente.png" alt="SARC Automotive Research & Care">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#pecas">Peças</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#projetos">Projetos</a>
+      <a class="nav-instagram" href="https://www.instagram.com/sarc_custons/" target="_blank" rel="noreferrer">Instagram ↗</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="user-button" type="button" aria-label="Entrar na área de usuário">
+        <span class="user-icon" aria-hidden="true">●</span>
+        <span class="user-label">Usuário</span>
+      </button>
+      <button class="cart-button" type="button" aria-label="Abrir carrinho">
+        <span>Carrinho</span><strong class="cart-count">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media image-slot" style="background-image: url('assets/images/projeto-sarc-oficina.webp');" role="img" aria-label="Projeto automotivo da oficina SARC"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> Desenvolvimento automotivo sob medida</p>
+        <h1 id="hero-title">NÃO É<br><em>MAIS UMA</em><br>PEÇA.</h1>
+        <p class="hero-text">É a parte que transforma o projeto. Peças autênticas, fabricação exclusiva e serviços pensados para carros e motos que não nasceram para ser iguais.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pecas">Explorar peças <span>↘</span></a>
+          <a class="button button-ghost whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero criar um projeto automotivo único e gostaria de conversar sobre a ideia.">Criar projeto único <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-specs" aria-label="Especialidades da SARC">
+        <div><strong>01</strong><span>Escapes em inox<br>sob medida</span></div>
+        <div><strong>02</strong><span>Desenvolvimento<br>3D automotivo</span></div>
+        <div><strong>03</strong><span>Customização<br>completa</span></div>
+      </div>
+
+      <a class="scroll-cue" href="#pecas">Role para ver <span>↓</span></a>
+    </section>
+
+    <section class="marquee" aria-label="Diferenciais">
+      <div class="marquee-track">
+        <span>PEÇAS AUTÊNTICAS</span><i>✦</i><span>PROJETOS EXCLUSIVOS</span><i>✦</i><span>CARROS & MOTOS</span><i>✦</i><span>FEITO SOB MEDIDA</span><i>✦</i>
+        <span>PEÇAS AUTÊNTICAS</span><i>✦</i><span>PROJETOS EXCLUSIVOS</span><i>✦</i><span>CARROS & MOTOS</span><i>✦</i><span>FEITO SOB MEDIDA</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="catalog section" id="pecas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark"><span></span> Catálogo selecionado</p>
+          <h2>PEÇAS COM<br><em>IDENTIDADE.</em></h2>
+        </div>
+        <p>Produção limitada, acabamento de verdade e soluções que respeitam o conjunto do veículo. Nada de pendurar plástico e chamar de projeto.</p>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar catálogo">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="carro">Carros</button>
+          <button class="filter" data-filter="moto">Motos</button>
+          <button class="filter" data-filter="universal">Universais</button>
+        </div>
+        <label class="search-box">
+          <span>Buscar</span>
+          <input id="product-search" type="search" placeholder="Ex.: escape, carbono..." />
+        </label>
+      </div>
+
+      <section class="admin-panel" id="admin-panel" hidden aria-label="Painel de administração da SARC">
+        <div class="admin-panel-heading">
+          <div>
+            <p class="admin-kicker">Sessão administrativa ativa</p>
+            <h3>PAINEL SARC</h3>
+            <p>Gerencie o catálogo e escolha quais projetos aparecem no site. As alterações ficam salvas neste navegador.</p>
+          </div>
+          <div class="admin-actions">
+            <button class="admin-button" id="logout-admin" type="button">Sair da conta</button>
+          </div>
+        </div>
+
+        <div class="admin-manager-block">
+          <div class="admin-subheading">
+            <div><span>01</span><h4>Catálogo de peças</h4><p>Cadastre itens, altere valores, imagens, nomes e categorias.</p></div>
+            <div class="admin-actions">
+              <button class="admin-button admin-button-primary" id="add-product" type="button">+ Adicionar peça</button>
+              <button class="admin-button" id="reset-products" type="button">Restaurar peças</button>
+            </div>
+          </div>
+          <div class="admin-product-list" id="admin-product-list"></div>
+        </div>
+
+        <div class="admin-manager-block">
+          <div class="admin-subheading">
+            <div><span>02</span><h4>Projetos da oficina</h4><p>Adicione trabalhos, escolha o destaque, oculte projetos e organize a ordem de exibição.</p></div>
+            <div class="admin-actions">
+              <button class="admin-button admin-button-primary" id="add-project" type="button">+ Adicionar projeto</button>
+              <button class="admin-button" id="reset-projects" type="button">Restaurar projetos</button>
+            </div>
+          </div>
+          <div class="admin-project-list" id="admin-project-list"></div>
+        </div>
+
+        <p class="admin-storage-note">Este painel é local. Para editar de vários dispositivos com segurança, será necessário conectar banco de dados, armazenamento de mídia e autenticação no servidor.</p>
+      </section>
+
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" hidden>Nenhuma peça encontrada. A busca humana falhou, mas o projeto ainda tem salvação.</p>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="services-intro">
+        <p class="eyebrow"><span></span> Oficina & desenvolvimento</p>
+        <h2>DO RASCUNHO<br>À <em>RUA.</em></h2>
+        <p>A SARC une desenvolvimento digital, fabricação e instalação. O resultado é um projeto coerente, funcional e com assinatura própria.</p>
+        <a class="button button-primary whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Gostaria de solicitar um orçamento para meu carro ou moto.">Solicitar orçamento <span>↗</span></a>
+      </div>
+
+      <div class="service-list">
+        <article><span>01</span><div><h3>Escapes em inox</h3><p>Dimensionamento, fabricação e acabamento sob medida para o seu projeto.</p><a class="service-whatsapp whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero um orçamento para escape em inox sob medida.">Pedir orçamento no WhatsApp</a></div><b>↗</b></article>
+        <article><span>02</span><div><h3>Desenvolvimento 3D</h3><p>Modelagem de peças exclusivas, prototipagem e ajustes antes da fabricação.</p><a class="service-whatsapp whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero conversar sobre desenvolvimento 3D de uma peça automotiva.">Pedir orçamento no WhatsApp</a></div><b>↗</b></article>
+        <article><span>03</span><div><h3>Suspensão & postura</h3><p>Acerto visual e funcional para melhorar altura, encaixe e comportamento.</p><a class="service-whatsapp whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero um orçamento para suspensão e acerto de postura do veículo.">Pedir orçamento no WhatsApp</a></div><b>↗</b></article>
+        <article><span>04</span><div><h3>Customização completa</h3><p>Projeto integrado para transformar carro ou moto sem perder a identidade.</p><a class="service-whatsapp whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero conversar sobre uma customização completa para meu veículo.">Pedir orçamento no WhatsApp</a></div><b>↗</b></article>
+        <article><span>05</span><div><h3>Detalhamento</h3><p>Finalização cuidadosa para entregar o projeto limpo, protegido e pronto.</p><a class="service-whatsapp whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Gostaria de solicitar um orçamento para detalhamento automotivo.">Pedir orçamento no WhatsApp</a></div><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="process section" id="processo">
+      <div class="process-layout">
+        <div class="process-visual">
+          <img src="assets/images/processo-sarc.webp" alt="Projeto SARC durante o processo de desenvolvimento na oficina">
+          <div class="process-visual-overlay"></div>
+          <div class="process-visual-caption"><strong>01 → 04</strong><span>Do primeiro contato à entrega</span></div>
+        </div>
+
+        <div class="process-content">
+          <p class="eyebrow dark"><span></span> Como funciona</p>
+          <h2>IDEIA. PROJETO.<br><em>MÁQUINA.</em></h2>
+          <p class="process-lead">Cada trabalho começa entendendo o objetivo real do veículo. Depois vêm medição, desenvolvimento, produção, montagem e revisão. A graça é terminar com uma solução que pareça ter nascido ali, não algo improvisado numa terça-feira cansada.</p>
+
+          <div class="process-steps">
+            <article>
+              <span>01</span>
+              <div><h3>Diagnóstico e briefing</h3><p>Conversamos sobre o carro ou moto, uso diário ou esportivo, referências, orçamento e resultado esperado. Também avaliamos limitações mecânicas e de espaço.</p><small>Saída da etapa: escopo claro e direção do projeto.</small></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Desenvolvimento técnico</h3><p>Definimos materiais, medidas, encaixes e acabamento. Quando necessário, usamos modelagem 3D e protótipos para validar a peça antes de fabricar.</p><small>Saída da etapa: solução aprovada para produção.</small></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>Fabricação e montagem</h3><p>A peça é produzida com controle de alinhamento, resistência e acabamento. Em seguida, fazemos a instalação e os ajustes finos no próprio veículo.</p><small>Saída da etapa: conjunto montado e funcional.</small></div>
+            </article>
+            <article>
+              <span>04</span>
+              <div><h3>Revisão e entrega</h3><p>Conferimos fixação, ruídos, folgas, funcionamento e acabamento final. O cliente recebe orientações de uso, manutenção e próximos passos.</p><small>Saída da etapa: projeto pronto para a rua.</small></div>
+            </article>
+          </div>
+
+          <a class="button button-primary whatsapp-link process-whatsapp" href="#" data-whatsapp-message="Olá, SARC! Vi como funciona o processo e quero avaliar um projeto para meu veículo.">Começar meu projeto <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section" id="projetos" aria-labelledby="projects-title">
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="eyebrow"><span></span> Trabalhos selecionados</p>
+          <h2 id="projects-title">PROJETOS QUE<br><em>SAÍRAM DO PAPEL.</em></h2>
+        </div>
+        <p>Clique em um projeto para ver descrição, fotos e vídeos. O administrador escolhe exatamente quais trabalhos aparecem aqui, porque nem toda tentativa precisa virar patrimônio histórico da internet.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <p class="projects-empty" hidden>Nenhum projeto está publicado no momento.</p>
+    </section>
+
+    <section class="cta section">
+      <div class="cta-mark">S</div>
+      <p class="eyebrow"><span></span> Seu projeto começa aqui</p>
+      <h2>SE É PARA SER<br>IGUAL, <em>NEM COMEÇA.</em></h2>
+      <p>Conte o que você quer construir. A SARC transforma a ideia em uma solução possível, funcional e realmente sua.</p>
+      <a class="button button-light whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Quero falar sobre um projeto personalizado para meu veículo.">Falar sobre meu projeto <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/images/logo-sarc-transparente.png" alt="SARC Automotive Research & Care">
+    </div>
+    <div><p>Navegação</p><a href="#pecas">Peças</a><a href="#servicos">Serviços</a><a href="#processo">Processo</a><a href="#projetos">Projetos</a></div>
+    <div><p>Contato</p><a class="whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Gostaria de solicitar um orçamento.">WhatsApp: (21) 98211-1504 ↗</a><a href="https://www.instagram.com/sarc_custons/" target="_blank" rel="noreferrer">@sarc_custons ↗</a></div>
+    <div class="footer-meta"><p>Peças autênticas.<br>Projetos únicos.</p><small>© <span id="year"></span> SARC. Todos os direitos reservados.</small></div>
+  </footer>
+
+  <aside class="cart-drawer" aria-hidden="true" aria-label="Carrinho de compras">
+    <div class="drawer-header"><div><small>Seu pedido</small><h2>CARRINHO</h2></div><button class="close-cart" type="button" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-empty"><strong>Seu carrinho está vazio.</strong><p>Uma raridade: espaço sobrando em projeto automotivo.</p></div>
+    <div class="cart-footer">
+      <div><span>Total estimado</span><strong class="cart-total">R$ 0,00</strong></div>
+      <button class="button button-primary checkout-button" type="button">Finalizar no WhatsApp <span>↗</span></button>
+      <small>Valores demonstrativos. Confirme disponibilidade e aplicação antes da compra.</small>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" hidden></div>
+
+  <dialog class="auth-modal login-modal">
+    <button class="close-login-modal modal-x" type="button" aria-label="Fechar">×</button>
+    <p class="eyebrow dark"><span></span> Área restrita</p>
+    <h2>ENTRAR COMO<br><em>USUÁRIO.</em></h2>
+    <form id="login-form">
+      <label>Senha
+        <input id="admin-password" name="senha" type="password" inputmode="numeric" autocomplete="current-password" required placeholder="Digite a senha">
+      </label>
+      <button class="button button-primary" type="submit">Entrar <span>↗</span></button>
+      <p class="login-error" role="alert"></p>
+      <p class="security-note">Senha temporária: <strong>123456</strong>. Como este site ainda é estático, esta proteção serve apenas para demonstração.</p>
+    </form>
+  </dialog>
+
+  <dialog class="auth-modal product-modal">
+    <button class="close-product-modal modal-x" type="button" aria-label="Fechar">×</button>
+    <p class="eyebrow dark"><span></span> Editor do catálogo</p>
+    <h2 id="product-modal-title">NOVA<br><em>PEÇA.</em></h2>
+    <form id="product-form">
+      <input id="product-id" name="id" type="hidden">
+      <label class="field-wide">Nome da peça
+        <input id="product-name" name="name" required maxlength="80" placeholder="Ex.: Ponteira SARC Inox 304">
+      </label>
+      <label>Categoria
+        <select id="product-category" name="category" required>
+          <option value="carro">Carro</option>
+          <option value="moto">Moto</option>
+          <option value="universal">Universal</option>
+        </select>
+      </label>
+      <label>Tipo / seção
+        <input id="product-type" name="type" required maxlength="50" placeholder="Ex.: Escape">
+      </label>
+      <label>Preço em reais
+        <input id="product-price" name="price" type="number" min="0" step="0.01" required placeholder="0,00">
+      </label>
+      <label>Selo
+        <input id="product-badge" name="badge" maxlength="40" placeholder="Ex.: Série limitada">
+      </label>
+      <label class="field-wide">URL da imagem
+        <input id="product-image-url" name="imageUrl" type="url" placeholder="https://...">
+      </label>
+      <label class="field-wide upload-field">Ou enviar uma imagem
+        <input id="product-image-file" name="imageFile" type="file" accept="image/*">
+        <small>A imagem será reduzida e salva neste navegador.</small>
+      </label>
+      <div class="product-image-preview field-wide" id="product-image-preview"><span>Prévia da imagem</span></div>
+      <button class="button button-primary field-wide" type="submit">Salvar peça <span>✓</span></button>
+      <p class="editor-status field-wide" role="status"></p>
+    </form>
+  </dialog>
+
+  <dialog class="auth-modal project-editor-modal">
+    <button class="close-project-editor modal-x" type="button" aria-label="Fechar">×</button>
+    <p class="eyebrow dark"><span></span> Editor de projetos</p>
+    <h2 id="project-editor-title">NOVO<br><em>PROJETO.</em></h2>
+    <form id="project-form">
+      <input id="project-id" type="hidden">
+      <label>Etiqueta
+        <input id="project-label" maxlength="35" placeholder="Ex.: Projeto 004">
+      </label>
+      <label>Título
+        <input id="project-title" required maxlength="80" placeholder="Ex.: Blackline Street">
+      </label>
+      <label class="field-wide">Resumo do card
+        <input id="project-short" required maxlength="160" placeholder="Uma frase curta para apresentar o trabalho">
+      </label>
+      <label class="field-wide">Descrição completa
+        <textarea id="project-description" rows="6" required placeholder="Explique o objetivo, soluções aplicadas, materiais e resultado final"></textarea>
+      </label>
+      <label class="field-wide">URL da imagem de capa
+        <input id="project-cover-url" placeholder="https://... ou assets/images/foto.webp">
+      </label>
+      <label class="field-wide upload-field">Ou enviar capa
+        <input id="project-cover-file" type="file" accept="image/*">
+        <small>A capa será comprimida e salva neste navegador.</small>
+      </label>
+      <div class="project-cover-preview field-wide" id="project-cover-preview"><span>Prévia da capa</span></div>
+      <label class="field-wide">Imagens da galeria, uma URL por linha
+        <textarea id="project-gallery-urls" rows="4" placeholder="https://...&#10;assets/images/outra-foto.webp"></textarea>
+      </label>
+      <label class="field-wide upload-field">Adicionar imagens à galeria
+        <input id="project-gallery-files" type="file" accept="image/*" multiple>
+        <small>Você pode selecionar várias imagens. Evite exageros, o localStorage não é uma nuvem, apesar da autoestima dele.</small>
+      </label>
+      <div class="project-gallery-editor field-wide" id="project-gallery-editor"></div>
+      <label class="field-wide">Vídeos, uma URL por linha
+        <textarea id="project-video-urls" rows="4" placeholder="Link do YouTube ou arquivo .mp4/.webm"></textarea>
+      </label>
+      <label class="project-option"><input id="project-visible" type="checkbox" checked><span>Exibir este projeto no site</span></label>
+      <label class="project-option"><input id="project-featured" type="checkbox"><span>Usar como projeto em destaque</span></label>
+      <button class="button button-primary field-wide" type="submit">Salvar projeto <span>✓</span></button>
+      <p class="project-editor-status field-wide" role="status"></p>
+    </form>
+  </dialog>
+
+  <dialog class="project-detail-modal">
+    <button class="close-project-detail modal-x" type="button" aria-label="Fechar">×</button>
+    <div class="project-detail-shell">
+      <div class="project-detail-media">
+        <div class="project-detail-main" id="project-detail-main"></div>
+        <div class="project-detail-thumbs" id="project-detail-thumbs"></div>
+      </div>
+      <div class="project-detail-copy">
+        <p class="project-detail-label" id="project-detail-label"></p>
+        <h2 id="project-detail-title"></h2>
+        <p class="project-detail-short" id="project-detail-short"></p>
+        <div class="project-detail-description" id="project-detail-description"></div>
+        <div class="project-video-list" id="project-video-list"></div>
+        <a class="button button-primary" id="project-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Quero um projeto assim <span>↗</span></a>
+      </div>
+    </div>
+  </dialog>
+
+  <a class="whatsapp-float whatsapp-link" href="#" data-whatsapp-message="Olá, SARC! Gostaria de falar sobre peças ou serviços para meu veículo." aria-label="Falar com a SARC no WhatsApp"><span>WA</span><b>WhatsApp</b></a>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
