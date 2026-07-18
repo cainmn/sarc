@@ -452,3 +452,25 @@ h1 em { color: transparent; -webkit-text-stroke-color: var(--acid); }
 .project-card-public.has-image > .image-placeholder { display: none; }
 .project-card-public:focus-visible { outline: 3px solid var(--acid); outline-offset: -3px; }
 .process { padding: 0; }
+/* Impede a marca d'água da CTA de bloquear o botão */
+.cta-mark {
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mantém o conteúdo da CTA acima da decoração */
+.cta .eyebrow,
+.cta h2,
+.cta > p,
+.cta .button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Garante que o botão continue clicável */
+.cta .cta-whatsapp {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
